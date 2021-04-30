@@ -1,0 +1,604 @@
+@import "bourbon"
+@import "_var.sass"
+@import "../app/libs/Magnific-Popup/magnific-popup.sass"
+@import "../app/libs/owl/assets/owl.carousel.sass"
+
+*::-webkit-input-placeholder
+	color: #fff
+	opacity: 1
+
+*:-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*::-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #fff
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #fff
+body input:required:valid,
+body textarea:required:valid
+	color: #fff
+
+.homesect
+	padding-top: 65px
+	background-color: #F9F9F9
+	position: relative
+	a
+		&:hover
+			text-decoration: none
+	.section-head
+		margin-bottom: 60px
+		a
+			font-family: "RalewayBold", $helvetica
+			color: $main-color
+		p
+			margin-top: 60px
+		h2
+			text-align: center
+			position: relative
+			&::after
+				position: absolute
+				content: ''
+				height: 4px
+				background-color: $main-color
+				width: 165px
+				display: block
+				bottom: -30px
+				left: 50%
+				transform: translate(-50%, 0)
+				border-radius: 10em
+		h3
+			text-align: center
+			margin-top: 50px
+	.section-bottom
+		background-color: #e5e5e5
+		padding: 50px 0
+		text-align: center
+	&::before
+		content: ''
+		height: 6px
+		width: 100%
+		position: absolute
+		top: -6px
+		background-image: url(img/bah_1.png)
+.main-mnu
+	text-align: center
+
+
+.section_1
+	.section-content
+		background-image: url(img/s1_gray_bg.png)
+		background-repeat: no-repeat
+		background-position: top
+	.section-bottom
+		background-color: #2C3949
+
+.section-content
+	position: relative
+	padding-bottom: 95px
+	.info-item-wrap
+		&:nth-child(4),&:last-child
+			.info-item
+
+	.s1_bottom_triangle
+		height: 90px
+		position: absolute
+		bottom: 0
+		background-image: url(img/s1_triangle.svg)
+		z-index: 2
+		width: 100%
+		background-position: top
+		background-size: 100% 100%
+		text-align: center
+		.triangle-logo
+			width: 116px
+			margin-top: 30px
+
+.s1-bottom
+	padding: 15px 0 65px
+	background-color: #394b5f
+	.info-item
+		margin: 15px 0 0
+		p
+			color: #fff
+			border-color: #546476
+	.info-item-wrap:nth-child(2)
+		.info-item
+			margin-top: 50px
+
+.info-item
+	padding-left: 34px
+	max-width: 303px
+	line-height: em(19px)
+	margin: 54px 0
+	h4
+		margin-top: 0
+		margin-bottom: 10px
+		a
+			font-size: em(24px)
+			line-height: em(13px)
+			text-decoration: underline
+			text-transform: none
+	p
+		font-size: em(16px)
+		border-bottom: 1px solid #Dee1E5
+		padding-bottom: 22px
+
+.info-item-wrap:nth-child(2)
+	.info-item
+		margin-top: 0
+
+.scales
+	width: 160px
+	position: absolute
+	top: -130px
+	left: 50%
+	transform: translate(-50%,0)
+	z-index: -1
+
+.s2-items
+	padding-bottom: 20px
+	.s2-item
+		text-align: center
+		color: #111
+		margin-bottom: 75px
+		display: block
+		>span
+			display: block
+		&-text
+			font-family: "RalewayBold", $helvetica
+			font-size: em(14px)
+			line-height: em(20px)
+	.img-wrap
+		padding-bottom: 32px
+		margin-bottom: 14px
+		display: block
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			height: 1px
+			background-color: $main-color
+			width: 58px
+			bottom: 0
+			left: 50%
+			transform: translate(-50%,0)
+		img
+			max-width: 75px
+			max-height: 60px
+
+.img-wrap
+	img
+		widows: 100%
+		max-width: 100%
+
+.s2-items-container
+	text-align: center
+// Animated 
+.s2-item-wrap
+	display: inline-block
+	float: none
+	padding: 0 15px
+	width: 185px
+	vertical-align: top
+	opacity: 0
+	transition: all .5s ease
+	transform: translateY(-25px)
+	&.on
+		opacity: 1
+		transform: translateY(0)
+	&:hover
+		transform: translateY(-10px)
+
+.s_dark
+	background-color: #2c3949
+	&::before
+		background-image: url(img/bah_2.png)
+	.section-head
+		h2
+			color: #fff
+		p
+			color: #e5e5e5
+	.section-bottom
+		background-color: #394B5F
+		margin-top: 60px
+
+
+
+
+.section_3
+	@extend .section_1
+	.section-content
+		min-height: 840px
+		background-image: url(img/s3_sun_bg.png)
+		padding-bottom: 0
+		padding-top: 64px
+		.info-item
+			margin-top: 70px
+		p
+			color: #fff
+			border-bottom: 0
+
+	.info-item-wrap
+		&:nth-child(2)
+			.info-item
+				margin-top: 0px
+		&:nth-child(4), &:nth-child(6)
+			margin-top: 0px
+		&:nth-child(8)
+			.info-item
+				margin-top: 170px
+		&:nth-child(1), &:nth-child(7)
+			.info-item
+				margin-left: 82px
+		&:nth-child(3), &:nth-child(9)
+			.info-item
+				margin-left: -35px
+		&:nth-child(6)
+			.info-item
+				margin-left: 30px
+	.sction-bottom
+		margin-top: 20px
+
+.s3-img-wrap
+	width: 130px
+	height: 130px
+	background-color: $main-color
+	text-align: center
+	border-radius: 10em
+	margin: 120px 0px 0px 110px
+	img
+		width: 70px
+		margin-top: 30px
+
+.s_gray
+	background-color: #e5e5e5
+	&::before
+		background-image: url(img/bah_3.png)
+	.section-bottom
+		background-color: #d6d6d6
+
+.section-pb
+	padding-bottom: 70px
+
+	
+// Animated 
+.cards
+	text-align: center
+	perspective: 600px
+	.card
+		&-on
+			opacity: 1
+		&-off
+			transform: rotateY(100deg)
+			opacity: 0
+		&:hover
+			border-color: $main-color
+			.img-wrap
+				transform: scale(1.1)
+		.img-wrap
+			transition: all .25s ease
+		width: 260px
+		transition: all 1.2s ease
+		display: inline-block
+		background-color: #2C3949
+		margin: 0 12px 30px
+		color: #97a4b2
+		font-size: em(15px)
+		line-height: em(21px)
+		padding: 54px 28px 48px
+		vertical-align: top
+		border-bottom: #1A222B 4px solid
+		h4
+			color: #E5E5E5
+			font-family: "RalewayBold", $helvetica
+			font-size: em(18px)
+			margin-top: 30px
+			margin-bottom: 18px
+		p
+			margin-bottom: 0
+			margin-top: 0
+			height: 75px
+			strong
+				color: $main-color
+
+		.card-icon
+			width: 120px
+			height: 120px
+			line-height: 120px
+			background-color: $main-color
+			border-radius: 10em
+			img
+				width: 75px
+
+			display: inline-block
+
+.section_4
+	h3
+		margin-bottom: 0
+	.section-pb
+		padding-bottom: 40px
+
+.triangles-container
+	color: #fff
+	font-family: "PFCentroSlabProMedium", $helvetica
+	font-size: em(19px)
+	margin: 20px 0 70px
+	text-align: center
+	.triangle-item
+		width: 290px
+		height: 128px
+		display: inline-block
+		position: relative
+		margin-left: -45px
+		vertical-align: top
+		cursor: default
+		transition: all .5s ease
+		&:first-child
+			margin-left: 0
+			.tr-content
+				margin-left: 50px
+		&:hover
+			transform: scale(1.08)
+			z-index: 3
+			path
+				fill-opacity: 0!important
+				stroke-opacity: 1!important
+		svg
+			position: absolute
+			top: 0
+			left: 0
+			z-index: 0
+		.tr-content
+			position: relative
+			z-index: 1
+			margin-top: 43px
+			margin-left: 60px
+			text-align: left
+			padding-left: 40px
+			opacity: 0
+			transition: all 1s ease
+			&-on
+				opacity: 1
+			span
+				font-size: em(20px)
+				margin-left: -22px
+				position: absolute
+			img
+				height: 40px
+				float: left
+				margin-left: -40px
+				margin-right: 32px
+
+// Animated 
+.teams
+	@extend .cards
+	.team
+		&-on
+			opacity: 1
+		&-off
+			transform: rotateY(100deg)
+			opacity: 0
+			min-height: 350px
+			display: inline-block
+			line-height: 0
+		.card-icon
+			overflow: hidden
+			background-color: transparent
+			line-height: 0
+
+			box-shadow: 0 0 0 4px #d6d6d6
+			img
+				width: 100%
+				margin-top: 0
+				top: 0
+				
+		@extend .card
+		border-color: #d6d6d6
+		background-color: #e5e5e5
+
+		h4
+			margin-top: 35px
+			color: #333
+			text-transform: none
+			margin-bottom: 20px
+		p
+			font-size: em(15px)
+			color: #6e7b8b
+			height: auto
+		.team-phone
+			margin-top: 30px
+			font-family: "RobotoBold", $helvetica
+			font-size: em(17px)
+			color: #333
+// Animated 
+.team
+	&-on
+		opacity: 1
+	&-off
+		transform: rotateY(100deg)
+		opacity: 0
+		&:first-child
+			.card-icon
+				img
+					
+					width: 100%
+					position: relative
+					top: 0
+	
+.section_6, .section_7
+	p
+		text-align: center
+
+.section_7
+	.section-head
+		margin-bottom: 44px
+
+
+.slider
+	.slide
+		text-align: center
+		margin-bottom: 20px
+		position: relative
+	.owl-item
+		.img-wrap, .slide-descr, h3, p
+			transition: all .6s ease
+			opacity: 0
+			transform: translate3d(100px, 0, 0)
+			transition-delay: .1s
+		.slide-descr, h3, p
+			transition-delay: .4s
+		p
+			opacity: 0
+			transition: all .3s ease
+			opacity: 0
+			transform: translate3d(100px, 0, 0)
+			transition-delay: .7s
+
+		&.active
+			.img-wrap
+				opacity: 1
+				transform: translate3d(0, 0, 0,)
+			.slide-descr, h3, p
+				opacity: 1
+				transition: all .4s ease
+				transform: translate3d(0, 0, 0,)
+				transition-delay: .5s
+		.img-wrap
+			margin: 6px
+			width: 116px
+			height: 116px
+			display: inline-block
+			border-radius: 10em
+			overflow: hidden
+			box-shadow: 0 0 0 6px $main-color
+			margin: 10px
+		h3
+			text-transform: none
+			font-size: em(24px)
+		p
+			.slide-descr
+				margin-top: 10px
+				font-size: em(15px)
+				color: #6e7B8B
+
+	.owl-controls
+		text-align: center
+		.owl-dot
+			width: 15px
+			height: 15px
+			margin: 0 auto
+			background-color: #d6d6d6
+			display: inline-block
+			border-radius: 10em
+			margin: 0 2px 
+			&.active
+				background-color: $main-color
+		.owl-nav
+			position: absolute
+			top: 12%
+			width: 100%
+			> div
+				height: 29px
+				width: 16px
+				background-image: url(img/slider_arrows.png)
+				position: absolute
+				left: 20px
+				opacity: .5
+				transition: all .25s ease
+				&:hover
+					opacity: 1
+			.owl-next
+				right: 20px
+				left: auto
+				background-position: -16px 0
+
+.s8-left
+	.section-head
+		h2
+			text-align: left
+			&::after
+				transform: none
+				left: 0
+
+.section_8
+	.section-pb
+		h2
+			opacity: 1!important
+		p
+			opacity: 1!important
+		form
+			opacity: 1!important
+
+.s8-items
+	margin-bottom: 20px
+	.s8-item
+		transition: all .5s ease
+		opacity: 0
+		transform: translateY(-25px)
+		text-align: center
+		&.on
+			opacity: 1
+			transform: translateY(0)
+		&:hover
+			transform: translateY(-10px)
+		.img-wrap
+			height: 72px
+			img
+				height: 72px
+				width: auto
+		p
+			font-family: "RalewayBold", $helvetica
+			font-size: 13px
+			line-height: em(19px)
+			margin-top: 18px
+				
+.homesect.section_8
+	padding-top: 80px
+	.forms
+		background-color: #ddd
+		border-color: #828282
+		h4
+			color: #2c3949
+		p
+			color: #5e6267
+		input
+			background-color: #C0C0C0
+			color: #333!important
+
+.s8-left
+	.section-head
+		margin-bottom: 50px
+		h2
+			margin-top: 0
+			text-align: left
+			&::after
+				transform: none
+				left: 0
+		.s8-content-text
+			text-align: left
+			padding-top: 30px
+
+
+.main-footer
+	padding-bottom: 60px
+	.logo
+		opacity: .3
+	.phone
+		opacity: 4
+	.main-mnu
+		a
+			color: #b5babf
+
+// ALWAYS END
+
+@import "_media.sass"
+
+
