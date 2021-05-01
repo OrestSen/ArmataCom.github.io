@@ -13,7 +13,7 @@ var deploy = require('gulp-deploy-git');
 gulp.task('deploy', function () {
 	return gulp.src('./**/*')
 		.pipe(deploy({
-			repository: 'https://github.com/zhevron/gulp-deploy-git.git'
+			repository: 'https://github.com/OrestSen/ArmataCom.github.io.git'
 		}));
 });
 
