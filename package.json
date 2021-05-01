@@ -1,5 +1,5 @@
 {
-  "name": "gulp-project",
+  "name": "test",
   "version": "1.0.0",
   "description": "First Gulp Project",
   "devDependencies": {
@@ -8,6 +8,7 @@
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-uglify-es": "^2.0.0",
@@ -15,5 +16,22 @@
   },
   "dependencies": {
     "bourbon": "^4.3.4"
-  }
+  },
+  "main": "1",
+  "scripts": {
+    "test": "1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OrestSen/ArmataCom.github.io.git"
+  },
+  "keywords": [
+    "1"
+  ],
+  "author": "1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OrestSen/ArmataCom.github.io/issues"
+  },
+  "homepage": "https://github.com/OrestSen/ArmataCom.github.io#readme"
 }
