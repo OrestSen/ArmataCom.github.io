@@ -1,5 +1,5 @@
 {
-  "name": "gulp-project",
+  "name": "test",
   "version": "1.0.0",
   "description": "First Gulp Project",
   "devDependencies": {
@@ -16,5 +16,22 @@
   },
   "dependencies": {
     "bourbon": "^4.3.4"
-  }
+  },
+  "main": "1",
+  "scripts": {
+    "test": "1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OrestSen/ArmataCom.github.io.git"
+  },
+  "keywords": [
+    "1"
+  ],
+  "author": "1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OrestSen/ArmataCom.github.io/issues"
+  },
+  "homepage": "https://github.com/OrestSen/ArmataCom.github.io#readme"
 }
