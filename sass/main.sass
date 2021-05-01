@@ -181,6 +181,7 @@ body textarea:required:valid
 
 .s2-items-container
 	text-align: center
+
 // Animated 
 .s2-item-wrap
 	display: inline-block
@@ -209,9 +210,6 @@ body textarea:required:valid
 	.section-bottom
 		background-color: #394B5F
 		margin-top: 60px
-
-
-
 
 .section_3
 	@extend .section_1
@@ -312,7 +310,7 @@ body textarea:required:valid
 		.card-icon
 			width: 120px
 			height: 120px
-			line-height: 120px
+			line-height: 140px
 			background-color: $main-color
 			border-radius: 10em
 			img
@@ -325,6 +323,15 @@ body textarea:required:valid
 		margin-bottom: 0
 	.section-pb
 		padding-bottom: 40px
+		.cards .card:nth-child(2)
+			img
+				position: relative
+				top: 5px
+		.cards .card:last-child 
+			img
+				position: relative
+				top: 20px
+		
 
 .triangles-container
 	color: #fff
@@ -419,6 +426,7 @@ body textarea:required:valid
 			font-family: "RobotoBold", $helvetica
 			font-size: em(17px)
 			color: #333
+
 // Animated 
 .team
 	&-on
