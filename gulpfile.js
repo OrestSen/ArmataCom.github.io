@@ -7,6 +7,19 @@ var gulp         = require('gulp'),
 		concat       = require('gulp-concat'),
 		uglify       = require('gulp-uglify-es').default;
 
+
+		var gulp        = require('gulp');
+		var deploy      = require('gulp-gh-pages');
+		
+		/**
+		 * Push build to gh-pages
+		 */
+		gulp.task('deploy', function () {
+		  return gulp.src("./**/*")
+			.pipe(deploy())
+		});
+
+
 gulp.task('browser-sync', function() {
 	browserSync.init({
 		server: {
