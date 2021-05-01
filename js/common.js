@@ -22,11 +22,14 @@ $(document).ready(function () {
 	});
 
 	$(".section_1 .section-content .info-item").equalHeights();
-	$(".section_3 .section-content .info-item").equalHeights();
-	$(".s1-bottom .info-item").equalHeights();
 	$(".s2-item").equalHeights();
 	$(".s2-item .img-wrap").equalHeights();
+	$(".section_3 .section-content .info-item").equalHeights();
+	$(".s1-bottom .info-item").equalHeights();
+	$(".section_6 .section-pb .team").equalHeights();
 
+
+	
 	$(".section_2").waypoint(function () {
 		$(".s2-item-wrap").each(function (index) {
 			var ths = $(this);

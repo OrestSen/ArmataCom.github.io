@@ -1,7 +1,7 @@
 @import "bourbon"
 @import "_var.sass"
-@import "../app/libs/Magnific-Popup/magnific-popup.sass"
-@import "../app/libs/owl/assets/owl.carousel.sass"
+@import "./libs/Magnific-Popup/magnific-popup.sass"
+@import "./libs/owl/assets/owl.carousel.sass"
 
 *::-webkit-input-placeholder
 	color: #fff
@@ -381,6 +381,7 @@ body textarea:required:valid
 .teams
 	@extend .cards
 	.team
+		padding: 53px 18px 48px
 		&-on
 			opacity: 1
 		&-off
@@ -596,16 +597,13 @@ body textarea:required:valid
 	.main-mnu
 		a
 			color: #b5babf
-
-// ALWAYS END
-
-
 .top
 	height: 36px
 	background-color: #1f2b3a
 	background-image: url(img/top.png)
 	background-repeat: no-repeat
 	background-position: center
+
 
 @import "_media.sass"
 
